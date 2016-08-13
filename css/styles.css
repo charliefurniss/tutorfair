@@ -14,7 +14,7 @@ body {
 
 /*HEADER STYLES*/
 
-.container-fluid header {
+header {
 	background-color: #DCDCDC;
 	overflow: auto;
 	box-shadow: 0 0 5px 0 #999999;
@@ -24,10 +24,16 @@ body {
 	width: 115px;
 	height: auto;
 	padding: 8px 0 0;
-	padding: 20px 0px;
+	padding: 15px 0px;
 }
 
 /*TEXT STYLES*/
+
+#intro-text,
+#main-text p {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
 
 .link-image-text {
 	color: #FFFFFF;
@@ -40,10 +46,14 @@ body {
 
 #title {
 	color: #2187C7;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 #title-container {
 	border-bottom: 1px solid #DCDCDC;
+	padding: 0;
+	margin: 0 15px;
 }
 
 /*IMAGE STYLES*/
@@ -71,6 +81,7 @@ button {
 	border-radius: 30px;
 	color: #FFFFFF;
 	padding: 5px 30px;
+	margin-top: 40px;
 }
 
 .btn-blue {
