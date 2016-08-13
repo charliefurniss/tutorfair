@@ -1,0 +1,48 @@
+/*GENERAL STYLES*/
+
+body {
+	color: #666666;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.indent {
+	margin: 0 200px;
+}
+
+/*HEADER STYLES*/
+
+header {
+	background-color: #CCCCCC;
+	border-bottom: 1px solid #999999;
+	overflow: auto;
+}
+
+.logo {
+	width: 115px;
+	height: auto;
+	padding: 8px 0 0;
+	padding: 20px 0px;
+}
+
+/*TEXT STYLES*/
+
+#title {
+	color: #2187C7;
+}
+
+/*BUTTON STYLES*/
+
+button {
+	font-size: 20px;
+	border: none;
+	border-radius: 30px;
+	color: #FFFFFF;
+	padding: 5px 30px;
+}
+
+.btn-blue {
+	background-color: #2187C7 !important;
+}
