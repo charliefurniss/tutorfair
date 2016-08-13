@@ -33,6 +33,27 @@ header {
 	color: #2187C7;
 }
 
+#title-container {
+	border-bottom: 1px solid #999999;
+}
+
+/*IMAGE STYLES*/
+
+div #links-container .single-link-container {
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 60%;
+}
+
+#promise-container {
+	background: url('../images/students-2.png');
+}
+
+#tutors-container {
+	background: url('../images/students-1.png');
+}
+
 /*BUTTON STYLES*/
 
 button {
