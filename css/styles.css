@@ -14,10 +14,10 @@ body {
 
 /*HEADER STYLES*/
 
-header {
-	background-color: #CCCCCC;
-	border-bottom: 1px solid #999999;
+.container-fluid header {
+	background-color: #DCDCDC;
 	overflow: auto;
+	box-shadow: 0 0 5px 0 #999999;
 }
 
 .logo {
@@ -29,12 +29,13 @@ header {
 
 /*TEXT STYLES*/
 
-.image-text {
+.link-image-text {
 	color: #FFFFFF;
 	position: absolute; 
 	left: 10%; 
 	width: 75%;
 	top: 50%;
+	padding-bottom: 20px;
 }
 
 #title {
@@ -42,7 +43,7 @@ header {
 }
 
 #title-container {
-	border-bottom: 1px solid #999999;
+	border-bottom: 1px solid #DCDCDC;
 }
 
 /*IMAGE STYLES*/
