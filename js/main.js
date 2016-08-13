@@ -16,6 +16,9 @@ $(document).ready(function() {
 			changeImage(filmArray[i]);
 			$('#results').on('click', function(e){
 				i++;
+				if (i == filmArray.length){
+					i = 0;
+				}
 				changeImage(filmArray[i]);
 				e.preventDefault();
 			})
