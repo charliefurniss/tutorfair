@@ -63,6 +63,11 @@ div #links-container .link-image  {
 	width: 100%;
 }
 
+.results-list {
+	list-style: none;
+	margin-top: 40px;
+}
+
 /*BUTTON STYLES*/
 
 button {

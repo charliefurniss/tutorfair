@@ -1,15 +1,26 @@
 $(document).ready(function() {
 
+	var filmArray = [];
+
 	$('#flickr-button').on('click', function(){
 		(function() {
 
 		  //changed the callback so that it is defined
 		  window.cb = function(data) {
 		    console.log(data);
+
+		    filmArray = data.items;
 		    
-		    $.each(data.items, function(index, data) {
-		    	createHTML(index, data);
+		    var i = 0;
+
+		    ammendHTML(filmArray[i]);
+
+		    $('#results').on('click', function(){
+		    	console.log("here");
+		    	i++;
+		    	ammendHTML(filmArray[i]);
 		    })
+
 		  };
 
 		  var tags = "london";
@@ -21,9 +32,9 @@ $(document).ready(function() {
 		})();
 	})
 
-	function createHTML(index, data){
-		$('.results-list').append('<li class="film col-xs-12 col-sm-6 col-md-4"></li>')
-		$('.results-list').find('li').eq(index).append('<div class="film-container"><div class="film-inner row">' + ' <div class="col-xs-3"><img class="film-poster" alt="" src="' + data.media.m + '"/></div></div></div>');
+	function ammendHTML(data){
+		$('#results').empty();
+		$('#results').append('<div class="col-lg-12"><img class="film-image" id="film-id" alt="" src="' + data.media.m + '"/></div>');
 	}
 	
 	// function cb(data) {
