@@ -63,14 +63,23 @@ div #links-container .link-image  {
 	width: 100%;
 }
 
-.results-list {
-	list-style: none;
-	margin-top: 40px;
+#film-id {
+	padding: 0;
+	margin-top: 30px;
+	height: 100%;
+}
+
+#results-container {
+	display: none;
 }
 
 /*BUTTON STYLES*/
 
-button {
+.blue {
+	background-color: #2187C7 !important;
+}
+
+input[type="button"] {
 	font-size: 20px;
 	border: none;
 	border-radius: 30px;
@@ -79,6 +88,10 @@ button {
 	margin-top: 40px;
 }
 
-.btn-blue {
-	background-color: #2187C7 !important;
+input[type="button"]:focus {
+	outline: none;
+}
+
+.red {
+	background-color: #F54B4B !important;
 }
