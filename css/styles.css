@@ -82,7 +82,7 @@ div #links-container .link-image  {
 }
 
 #film-image-container {
-	height: 500px;
+	height: 100%;
 	overflow: hidden;
 }
 
