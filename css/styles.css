@@ -29,6 +29,14 @@ header {
 
 /*TEXT STYLES*/
 
+.image-text {
+	color: #FFFFFF;
+	position: absolute; 
+	left: 10%; 
+	width: 75%;
+	top: 50%;
+}
+
 #title {
 	color: #2187C7;
 }
@@ -39,20 +47,20 @@ header {
 
 /*IMAGE STYLES*/
 
-div #links-container .single-link-container {
-	background-size: contain;
-	background-repeat: no-repeat;
+div #links-container .link-image  {
+	position: relative;
 	width: 100%;
-	padding-top: 60%;
 }
 
-#promise-container {
+
+
+/*#promise-container {
 	background: url('../images/students-2.png');
 }
 
 #tutors-container {
 	background: url('../images/students-1.png');
-}
+}*/
 
 /*BUTTON STYLES*/
 
