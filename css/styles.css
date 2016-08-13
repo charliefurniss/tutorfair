@@ -9,7 +9,7 @@ body {
 }
 
 .indent {
-	margin: 0 200px;
+	margin: 0 150px;
 }
 
 /*HEADER STYLES*/
@@ -21,13 +21,20 @@ header {
 }
 
 .logo {
-	width: 115px;
 	height: auto;
-	padding: 8px 0 0;
-	padding: 15px 0px;
+}
+
+.logo-size {
+	width: 115px;
+	padding: 15px 0;
 }
 
 /*TEXT STYLES*/
+
+.arrow {
+	font-size: 32px;
+	margin-left: 10px;
+}
 
 #intro-text,
 #main-text p {
@@ -41,7 +48,10 @@ header {
 	left: 10%; 
 	width: 75%;
 	top: 50%;
-	padding-bottom: 20px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
 }
 
 #title {
@@ -61,6 +71,7 @@ header {
 div #links-container .link-image  {
 	position: relative;
 	width: 100%;
+	margin-top: 20px;
 }
 
 #film-id {
@@ -85,6 +96,10 @@ div #links-container .link-image  {
 	background-color: #2187C7 !important;
 }
 
+input[class="button-size"] {
+
+}
+
 input[type="button"] {
 	font-size: 20px;
 	border: none;
@@ -100,4 +115,74 @@ input[type="button"]:focus {
 
 .red {
 	background-color: #F54B4B !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.indent {
+		margin: 0 100px;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+	.indent {
+		margin: 0 50px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	.indent {
+		margin: 0 25px;
+	}
+
+}
+
+@media screen and (max-width: 544px) {
+
+	/*GENERAL STYLES*/
+
+	.indent {
+		margin: 0 15px;
+	}
+
+	/*HEADER STYLES*/
+
+	.logo-size {
+		width: 80px;
+		padding: 10px 0;
+	}
+
+	/*TEXT STYLES*/
+
+	.arrow {
+		font-size: 24px;
+		margin-left: 7px;
+	}
+
+	.link-title {
+		font-size: 18px;
+	}
+
+	h1#title {
+		font-size: 28px;
+	}
+
+	h4#intro-text {
+		font-size: 14px;
+	}
+
+	p#main-text {
+		font-size: 12px;
+	}
+
+	#promise-text,
+	#tutor-text {
+		display: none;
+	}
+
 }

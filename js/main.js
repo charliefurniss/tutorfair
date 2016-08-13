@@ -2,13 +2,13 @@ $(document).ready(function() {
 
 	var filmArray = [];
 
-	getFilmData();
+	init();
 
 	$('#flickr-button').on('click', function(e){
 		toggleImageDisplay(e.currentTarget);
 	})
 
-	function getFilmData(){
+	function init(){
 		window.cb = function(data) {
 			filmArray = data.items;
 
