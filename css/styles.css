@@ -2,15 +2,13 @@
 
 body {
 	color: #666666;
+	font-family: Arial;
 }
 
 .container-fluid {
 	padding: 0;
 }
 
-.indent {
-	margin: 0 150px;
-}
 
 /*HEADER STYLES*/
 
@@ -28,6 +26,7 @@ header {
 	width: 115px;
 	padding: 15px 0;
 }
+
 
 /*TEXT STYLES*/
 
@@ -48,10 +47,6 @@ header {
 	left: 10%; 
 	width: 75%;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-
 }
 
 #title {
@@ -65,6 +60,7 @@ header {
 	padding: 0;
 	margin: 0 15px;
 }
+
 
 /*IMAGE STYLES*/
 
@@ -89,6 +85,7 @@ div #links-container .link-image  {
 #results-container {
 	display: none;
 }
+
 
 /*BUTTON STYLES*/
 
@@ -118,32 +115,8 @@ input[type="button"]:focus {
 }
 
 
-@media screen and (max-width: 1200px) {
-
-	.indent {
-		margin: 0 100px;
-	}
-
-}
-
-@media screen and (max-width: 992px) {
-
-	.indent {
-		margin: 0 50px;
-	}
-
-}
-
 @media screen and (max-width: 768px) {
 	
-	.indent {
-		margin: 0 25px;
-	}
-
-}
-
-@media screen and (max-width: 544px) {
-
 	/*GENERAL STYLES*/
 
 	.indent {
@@ -176,13 +149,10 @@ input[type="button"]:focus {
 		font-size: 14px;
 	}
 
-	p#main-text {
+	p#main-text,
+	p#promise-text,
+	p#tutor-text {
 		font-size: 12px;
-	}
-
-	#promise-text,
-	#tutor-text {
-		display: none;
 	}
 
 }
